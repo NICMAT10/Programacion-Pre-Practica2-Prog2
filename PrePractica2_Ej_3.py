@@ -5,5 +5,14 @@
 
 
 #INICIO
+from logging import exception
 
+a = int(input("Escribe el primer numero: "))
+b = int(input("Escribe el siguiente numero: "))
+try:
+    c = a / b
+    print(c)
+    
+except ZeroDivisionError as exception:
+    print(f"Se ha producido un error | {exception}")
 #FIN
